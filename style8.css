@@ -1,0 +1,86 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #e8f5e9);
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+#soil-checker {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Output Section */
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+}
+
+/* Footer */
+footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

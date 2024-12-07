@@ -1,0 +1,119 @@
+/* Root Variables for Theme Colors */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-bg-color: #2e8b57;
+    --button-bg-color: #2e8b57;
+    --button-hover-bg-color: #248b3d;
+    --post-bg-color: #f9f9f9;
+}
+
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --header-bg-color: #1b5e20;
+    --button-bg-color: #1b5e20;
+    --button-hover-bg-color: #145214;
+    --post-bg-color: #333333; /* Darker post background */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#themeToggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+#themeToggle:hover {
+    transform: scale(1.1);
+}
+
+/* Forum Section */
+#forum, #social-sharing {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--post-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color); /* Dynamic text color for sections */
+}
+
+textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    height: 100px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--button-bg-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Ensure all buttons adapt to the current text color */
+button.social-button {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--header-bg-color);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    textarea, input[type="file"], button {
+        width: 100%;
+    }
+}

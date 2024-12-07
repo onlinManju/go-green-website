@@ -1,0 +1,134 @@
+/* General Styles for the Page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('images/marketplace-bg.jpg'); /* Background image for the page */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff; /* White background for header */
+    background-image: url('images/header-bg.jpg'); /* Background image for header */
+    background-size: cover;
+    color: #2e8b57; /* Green color for text */
+    font-size: 2.5rem;
+}
+
+/* Water Usage Section */
+#waterUsage {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#usageStats {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#checkUsageBtn {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#checkUsageBtn:hover {
+    background-color: #248b3d;
+}
+
+#usageMessage {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #2e8b57;
+}
+
+/* Rainwater Harvesting Section */
+#rainwaterHarvesting {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#rainTips {
+    max-height: 200px; /* Limit the height of the scrollable section */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+/* Styling for the list items inside the Rainwater Harvesting section */
+#rainTips ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+#rainTips li {
+    margin-bottom: 10px;
+}
+
+/* Button for Learn More */
+#harvestInfo {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#harvestInfo:hover {
+    background-color: #248b3d;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2e8b57;
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+
+    #waterUsage, #rainwaterHarvesting {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #usageStats, #rainTips {
+        font-size: 1rem;
+    }
+}

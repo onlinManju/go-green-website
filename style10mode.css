@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.calculator-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .calculator-container {
+    background: #34495e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+body.dark-mode h1 {
+    color: #ecf0f1;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+body.dark-mode p {
+    color: #bdc3c7;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body.dark-mode .input-group input {
+    background-color: #7f8c8d;
+    color: #ecf0f1;
+    border-color: #95a5a6;
+}
+
+#calculate-btn, #profit-calculate-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#calculate-btn:hover, #profit-calculate-btn:hover {
+    background-color: #27ae60;
+}
+
+body.dark-mode #calculate-btn, body.dark-mode #profit-calculate-btn {
+    background-color: #27ae60;
+}
+
+#results, #profit-results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#results h2, #profit-results h2 {
+    margin-bottom: 10px;
+}
+
+#results p, #profit-results p {
+    margin: 5px 0;
+}
+
+#profit-difference {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#dark-mode-toggle {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #2980b9;
+}

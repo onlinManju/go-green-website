@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farming Carbon Emission Tracker</title>
+  <link rel="stylesheet" href="style11mode.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌍 Farming Carbon Emission Tracker</h1>
+      <button id="toggle-theme">Switch to Dark Mode</button>
+    </header>
+    
+    <p>Calculate and compare carbon emissions for eco-friendly and conventional farming methods.</p>
+    
+    <form id="emission-form">
+      <div class="input-group">
+        <h2>Eco-Friendly Farming</h2>
+        <label for="eco-fertilizers">Fertilizers (kg CO₂):</label>
+        <input type="number" id="eco-fertilizers" placeholder="Enter value" required>
+        
+        <label for="eco-energy">Energy (kg CO₂):</label>
+        <input type="number" id="eco-energy" placeholder="Enter value" required>
+        
+        <label for="eco-transport">Transportation (kg CO₂):</label>
+        <input type="number" id="eco-transport" placeholder="Enter value" required>
+      </div>
+      
+      <div class="input-group">
+        <h2>Conventional Farming</h2>
+        <label for="conv-fertilizers">Fertilizers (kg CO₂):</label>
+        <input type="number" id="conv-fertilizers" placeholder="Enter value" required>
+        
+        <label for="conv-energy">Energy (kg CO₂):</label>
+        <input type="number" id="conv-energy" placeholder="Enter value" required>
+        
+        <label for="conv-transport">Transportation (kg CO₂):</label>
+        <input type="number" id="conv-transport" placeholder="Enter value" required>
+      </div>
+      
+      <button type="button" id="calculate-btn">Calculate</button>
+    </form>
+    
+    <div id="results" class="hidden">
+      <h2>Results</h2>
+      <p><strong>Eco-Friendly Emissions:</strong> <span id="eco-total">0</span> kg CO₂</p>
+      <p><strong>Conventional Emissions:</strong> <span id="conv-total">0</span> kg CO₂</p>
+      <p><strong>Difference:</strong> <span id="difference">0</span> kg CO₂</p>
+    </div>
+  </div>
+  <script src="jav11mode.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background-color: #1b5e20;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#fertilizer-output {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

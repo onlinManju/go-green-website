@@ -1,0 +1,72 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f4c3, #c8e6c9);
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background: url('farm-header.jpg') center/cover no-repeat;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+#farmTour {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#viewer {
+    margin-top: 10px;
+}
+
+#viewer video {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Info Section */
+#info {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #388e3c;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Footer */
+footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

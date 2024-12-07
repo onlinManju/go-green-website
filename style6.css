@@ -1,0 +1,114 @@
+/* General Styles for the Page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    color: #2e8b57;
+    font-size: 2rem;
+    background-image: url('images/header-bg.jpg'); /* Add your header background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Farms Section */
+#farms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the farm profiles */
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 800px; /* Ensure scrolling if content exceeds */
+    gap: 20px; /* Add spacing between farm profiles */
+}
+
+/* Individual Farm Profile */
+.farm-profile {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* More intense shadow for depth */
+    width: 260px; /* Slightly larger width for a balanced look */
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Prevent images from overflowing */
+    position: relative; /* Positioning context for hover effects */
+}
+
+.farm-profile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Farm Profile Image */
+.farm-profile img {
+    width: 100%;
+    height: 180px; /* Set height for uniformity */
+    object-fit: cover; /* Ensure image is properly cropped to fit */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Farm Name */
+.farm-profile h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #2e8b57; /* Green color for consistency */
+}
+
+/* Farm Description */
+.farm-profile p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Certifications Badge */
+.certifications {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.badge {
+    background-color: #e9f7e1;
+    color: #155724;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.badge.organic {
+    background-color: #a8e6cf; /* Light Green for Organic */
+}
+
+.badge.fair-trade {
+    background-color: #ffdfba; /* Light Yellow for Fair Trade */
+}
+
+.badge:hover {
+    background-color: #d4edda; /* Slight darkening effect when hovered */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 0;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
