@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm-to-Table Marketplace</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Farm-to-Table Marketplace</h1>
+            <p>Buy eco-friendly, locally grown products directly from farmers!</p>
+        </header>
+
+        <section class="filters">
+            <h2>Filter by Sustainability</h2>
+            <label for="organic">Organic</label>
+            <input type="checkbox" id="organic">
+            <label for="fairTrade">Fair Trade</label>
+            <input type="checkbox" id="fairTrade">
+            <label for="lowCarbon">Low Carbon Footprint</label>
+            <input type="checkbox" id="lowCarbon">
+            <button id="applyFilters">Apply Filters</button>
+        </section>
+
+        <section class="product-list">
+            <h2>Available Products</h2>
+            <div id="products" class="products">
+                <!-- Product items will appear here -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cartSection">
+            <h2>Your Cart</h2>
+            <div id="cart"></div>
+            <button id="checkoutBtn">Proceed to Checkout</button>
+        </section>
+
+        <!-- Checkout Form -->
+        <section id="checkoutForm" style="display:none;">
+            <h2>Enter Your Details</h2>
+            <form id="orderForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" required></textarea>
+
+                <button type="submit">Place Order (Cash on Delivery)</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Farm-to-Table Marketplace | All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="jav3.js"></script>
+</body>
+</html>

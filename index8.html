@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Health Checker</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Soil Health Checker</h1>
+    </header>
+    <main>
+        <section id="soil-checker">
+            <h2>Enter Soil Parameters</h2>
+            <form id="soilForm">
+                <label for="ph">Soil pH (0-14):</label>
+                <input type="number" id="ph" name="ph" step="0.1" min="0" max="14" required>
+
+                <label for="moisture">Moisture Level (%):</label>
+                <input type="number" id="moisture" name="moisture" step="1" min="0" max="100" required>
+
+                <label for="temperature">Temperature (°C):</label>
+                <input type="number" id="temperature" name="temperature" step="0.1" required>
+
+                <button type="submit">Check Soil Health</button>
+            </form>
+            <div id="output"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Soil Health Checker. All Rights Reserved.</p>
+    </footer>
+    <script src="jav8.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost and Profit Calculator</title>
+    <link rel="stylesheet" href="style10mode.css">
+</head>
+<body>
+    
+    <div class="calculator-container">
+        <h1>Cost and Profit Calculator</h1>
+        <p>Compare eco-friendly farming with conventional farming.</p>
+
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+        <form id="calculator-form">
+            <div class="input-group">
+                <label for="eco-fertilizers">Eco-friendly Fertilizers Cost ($):</label>
+                <input type="number" id="eco-fertilizers" min="0" placeholder="Enter cost">
+            </div>
+            <div class="input-group">
+                <label for="eco-seeds">Eco-friendly Seeds Cost ($):</label>
+                <input type="number" id="eco-seeds" min="0" placeholder="Enter cost">
+            </div>
+            <div class="input-group">
+                <label for="eco-energy">Eco-friendly Energy Cost ($):</label>
+                <input type="number" id="eco-energy" min="0" placeholder="Enter cost">
+            </div>
+
+            <div class="input-group">
+                <label for="conv-fertilizers">Conventional Fertilizers Cost ($):</label>
+                <input type="number" id="conv-fertilizers" min="0" placeholder="Enter cost">
+            </div>
+            <div class="input-group">
+                <label for="conv-seeds">Conventional Seeds Cost ($):</label>
+                <input type="number" id="conv-seeds" min="0" placeholder="Enter cost">
+            </div>
+            <div class="input-group">
+                <label for="conv-energy">Conventional Energy Cost ($):</label>
+                <input type="number" id="conv-energy" min="0" placeholder="Enter cost">
+            </div>
+
+            <button type="button" id="calculate-btn">Calculate</button>
+        </form>
+
+        <div id="results">
+            <h2>Results</h2>
+            <p id="eco-total">Eco-friendly Total Cost: $<span>0</span></p>
+            <p id="conv-total">Conventional Total Cost: $<span>0</span></p>
+            <p id="difference">Difference: $<span>0</span></p>
+        </div>
+
+        <div id="profit-results">
+            <h2>Profit Comparison</h2>
+            <div class="input-group">
+                <label for="eco-profit">Eco-friendly Profit ($):</label>
+                <input type="number" id="eco-profit" min="0" placeholder="Enter profit for Eco-friendly">
+            </div>
+            <div class="input-group">
+                <label for="conv-profit">Conventional Profit ($):</label>
+                <input type="number" id="conv-profit" min="0" placeholder="Enter profit for Conventional">
+            </div>
+            <button type="button" id="profit-calculate-btn">Calculate Profit</button>
+            <p id="profit-difference">Profit Difference: $<span>0</span></p>
+        </div>
+    </div>
+
+    <script src="jav10mode.js"></script>
+</body>
+</html>
